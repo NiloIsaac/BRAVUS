@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>CALISTRAINER</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+		.wow:first-child {
+			visibility: hidden;
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+	<script>
+		$(document).ready(function () {
+			var link = "https://api.whatsapp.com/send?phone=5586995936387";
+			var button = `
+   <div class="wa-container">
+	   <div class="wa-button">
+		   <a class="wa-button-link" href="${link}" target="_blank">
+			   <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" width="50" height="50" version="1.1">
+				   <path d=" M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z"></path>
+			   </svg>
+		   </a>
+	   </div>
+   </div>
+		   `;
+			var style = `
+		   <style>
+		   .wa-container {
+			   position: fixed;
+			   bottom: 0;
+			   right: 0;
+			   z-index: 1000;
+			   margin: 0 10px 10px 0;
+		   }
+		   .wa-button {
+			   border-radius: 30px;
+			   background-color: #25d366;
+			   color: #fff;
+			   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			   padding: 5px;
+		   }
+		   .wa-button:hover {
+			   background-color: #075e54;
+		   }
+		   .wa-button svg {
+			   fill: white;
+		   }
+		   </style>`
+			$("body").append(style);
+			$("body").append(button);
+		});
+	</script>
+	<!-- Start Header  -->
+	<header>
+		<div class="container">
+			<div class="logo">
+				<a href="">
+					<img src="images/logo1r.png" alt="CALISTRAINER" id="logotipo">
+				</a>
+			</div>
+
+			<a href="javascript:void(0)" class="ham-burger">
+				<span></span>
+				<span></span>
+			</a>
+			<div class="nav">
+				<ul>
+					<li><a href="#home">Inicio</a></li>
+					<li><a href="#about">Sobre nós</a></li>
+					<li><a href="#service">Curso</a></li>
+					<li><a href="#schedule">Inscrições</a></li>
+					<li><a href="#flags">Treinadores</a></li>
+					<li><a href="https://www.facebook.com/profile.php?id=100095472666684"><span
+								class="fa fa-facebook"></span> Facebook</a></li>
+					<li><a href="https://www.instagram.com/calistrainer_oficial"><span class="fa fa-instagram"></span>
+							Instagram</a></li>
+					<li><a href="https://youtube.com/@calistrainer_oficial?si=N_TJqnx5IOehawNi"><span
+								class="fa fa-youtube-play"></span> Youtube</a></li>
+					<li><a href="#contact">Contato</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- End Header  -->
+
+	<!-- Start Home -->
+	<section class="home wow flash" id="home">
+		<div class="container" className="textoInicial">
+			<h1 class="wow slideInRight" data-wow-delay="1s">A <span>1° certificação</span> de <span>Calistenia</span>
+				do Brasil
+			</h1>
+		</div>
+
+		<!-- go down -->
+		<a href="https://api.whatsapp.com/send?phone=5586995936387" class="go-down">
+			<i class="fa fa-whatsapp" aria-hidden="true"> Torne-se um treinador</i>
+		</a>
+		<!-- go down -->
+
+	</section>
+	<!-- End Home -->
+
+
+	<!-- Start About -->
+	<section class="about" id="about">
+		<div class="container">
+			<div class="content">
+				<div class="box wow bounceInUp">
+					<div class="inner">
+						<div class="img">
+							<img src="images/Caixa 1.png" alt="about" />
+						</div>
+						<div class="text">
+							<h4>O que é calistenia?</h4>
+							<p>Calistenia é um método secular, já consolidado como um dos melhores treinos para
+								desenvolvimento de performance atlética e transformação corporal rápida e efetiva. Uma
+								das principais características da calistenia é a utilização do próprio peso corporal
+								como sobrecarga para os exercícios, também sendo conhecida como Bodyweight Training. Com
+								a evolução do conhecimento científico, o método foi modernizado, voltando a ser uma das
+								maiores tendências fitness mundiais da atualidade.</p>
+						</div>
+					</div>
+				</div>
+				<div class="box wow bounceInUp" data-wow-delay="0.2s">
+					<div class="inner">
+						<div class="img">
+							<img src="images/Caixa 2.png" alt="about" />
+						</div>
+						<div class="text">
+							<h4>O que é Street Workout?</h4>
+							<p>O Street Workout é a modalidade esportiva que surgiu como uma como derivação da
+								calistenia. Com o passar dos anos, os praticantes começaram a criar novos exercícios ou
+								executá-los de formas mais difíceis e desafiadoras. Naturalmente, começaram a surgir
+								disputas para saber quem era o “melhor”. Esses praticantes estabeleceram regras, criaram
+								organizações e eventos. Atualmente, são promovidos campeonatos mundiais, internacionais,
+								nacionais e locais em diversos países.</p>
+						</div>
+					</div>
+				</div>
+				<div class="box wow bounceInUp" data-wow-delay="0.4s">
+					<div class="inner">
+						<div class="img">
+							<img src="images/Caixa 3.png" alt="about" />
+						</div>
+						<div class="text">
+							<h4>Por que ser um Calistrainer?</h4>
+							<p>Ser um profissional com certificação em calistenia amplia suas possibilidades de atuação,
+								pois, além de possibilitar sua contratação em academias e centros de treinamento
+								tradicionais, o treino com peso corporal oportuniza atendimentos em grupo ou individual,
+								nos mais diversos locais e até na modalidade online. Se tornar um Calistrainer te dará
+								visibilidade e know-how: com nossa certificação você terá o embasamento teórico aliado à
+								prática, para oferecer o melhor aos seus alunos.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End About -->
+
+	<!-- Start Service -->
+	<section class="service" id="service">
+		<div class="container">
+			<div class="content">
+				<div class="text box wow slideInLeft">
+					<h2>Nosso Curso</h2>
+					<p>Nosso curso contará com uma abordagem teórica e prática de todas as etapas para a elaboração de
+						um treinamento de calistenia. Além de analisarmos de forma completa os exercícios que compõem o
+						treino dessa modalidade, serão abordados: método de ensino, correções, adaptações, progressões a
+						longo prazo, entre outros.
+					</p>
+					<p>
+						A certificação Calistrainer te garante acesso à uma metodologia completa, eficiente e arrojada,
+						baseada em quase 10 anos de experiência profissional no ramo da calistenia, desenvolvida por
+						profissionais extremamente qualificados e inovadores.
+						A formação integral se dará em três níveis.
+					</p>
+					<a href="https://docs.google.com/forms/d/e/1FAIpQLSd42ze7LNLqqPo6wIHB5IsJTz1V865pluI_myjnWigeTuGG7g/viewform"
+						class="btn">Torne-se um treinador</a>
+				</div>
+				<div class="accordian box wow slideInRight">
+					<div class="accordian-container active">
+						<div class="head">
+							<h4>Level 01</h4>
+							<span class="fa fa-angle-down"></span>
+						</div>
+						<div class="body">
+							<p>Análise integral dos exercícios de calistenia; Estruturação dos treinos de força;
+								Potência e resistência; Introdução e ensino dos movimentos básicos do Street Workout.
+							</p>
+						</div>
+					</div>
+					<div class="accordian-container">
+						<div class="head">
+							<h4>Level 02</h4>
+							<span class="fa fa-angle-up"></span>
+						</div>
+						<div class="body">
+							<p>Organização e estruturação de métodos de hipertrofia aplicados à calistenia; Análise e
+								utilização de métodos de emagrecimento nos treinos de calistenia; Evolução e
+								desenvolvimento dos movimentos intermediários do Street workout.</p>
+						</div>
+					</div>
+					<div class="accordian-container">
+						<div class="head">
+							<h4>Level 03</h4>
+							<span class="fa fa-angle-up"></span>
+						</div>
+						<div class="body">
+							<p>Correções e adaptações dos exercícios calistênicos a situações específicas de limitações
+								física ou lesões; Exercícios de correção, fortalecimento e reabilitação física; Evolução
+								da calistenia ao street lifting; Organização de um treinamento de street lifting de alta
+								performance; Desenvolvimento e progressões para movimentos avançados do street workout;
+								Formação e treinamento de atletas avançados de street workout.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Service -->
+
+	<!-- Start Schedule -->
+	<section class="schedule" id="schedule">
+		<div class="container">
+			<div class="content">
+				<div class="box text wow slideInLeft">
+					<h2>Inscrições abertas para o level 1</h2>
+
+					<p>Faça parte da primeira turma de Calistrainers!</p>
+					<p>Se junte ao time de treinadores pioneiros da modalidade no Brasil e chegue na frente!</p>
+
+					<a href="https://docs.google.com/forms/d/e/1FAIpQLSd42ze7LNLqqPo6wIHB5IsJTz1V865pluI_myjnWigeTuGG7g/viewform"
+						id="botaozao" class="btn">Inscreva-se</a>
+				</div>
+				<div class="box timing wow slideInRight">
+					<table class="table">
+						<tbody>
+							<tr>
+								<td class="day">23/Setembro/2023</td>
+								<td><a
+										href="https://docs.google.com/forms/d/e/1FAIpQLSd42ze7LNLqqPo6wIHB5IsJTz1V865pluI_myjnWigeTuGG7g/viewform"><strong>Recife-PE</strong></a>
+								</td>
+
+							</tr>
+							<tr>
+								<td class="day">24/Setembro/2023</td>
+								<td><a
+										href="https://docs.google.com/forms/d/e/1FAIpQLSd42ze7LNLqqPo6wIHB5IsJTz1V865pluI_myjnWigeTuGG7g/viewform"><strong>Recife-PE</strong></a>
+								</td>
+
+							</tr>
+							<tr>
+								<td class="day">21/Outubro/2023</td>
+								<td><a
+										href="https://docs.google.com/forms/d/e/1FAIpQLSd42ze7LNLqqPo6wIHB5IsJTz1V865pluI_myjnWigeTuGG7g/viewform"><strong>São
+											Paulo-SP</strong></a></td>
+
+							</tr>
+							<tr>
+								<td class="day">22/Outubro/2023</td>
+								<td><a
+										href="https://docs.google.com/forms/d/e/1FAIpQLSd42ze7LNLqqPo6wIHB5IsJTz1V865pluI_myjnWigeTuGG7g/viewform"><strong>São
+											Paulo-SP</strong></a></td>
+
+							</tr>
+							<tr>
+								<td class="day">25/Novembro/2023</td>
+								<td><a
+										href="https://docs.google.com/forms/d/e/1FAIpQLSd42ze7LNLqqPo6wIHB5IsJTz1V865pluI_myjnWigeTuGG7g/viewform"><strong>Fortaleza-CE</strong></a>
+								</td>
+
+							</tr>
+							<tr>
+								<td class="day">26/Novembro/2023</td>
+								<td><a
+										href="https://docs.google.com/forms/d/e/1FAIpQLSd42ze7LNLqqPo6wIHB5IsJTz1V865pluI_myjnWigeTuGG7g/viewform"><strong>Fortaleza-CE</strong></a>
+								</td>
+
+							</tr>
+						</tbody>
+
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Schedule -->
+
+	<!-- Start Today -->
+	<!--<section class="start-today">
+		<div class="container">
+			<div class="content">
+				<div class="box text wow slideInLeft">
+					<h2>Comece seu treinamento ainda hoje</h2>
+					<div class="mapouter">
+						<div class="gmap_canvas"><iframe
+								src="https://maps.google.com/maps?q=R.%20Jaime%20da%20Botica,%202520%20-%20Horto,%20Teresina%20-%20PI,%2064052-485&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+								id="gmap_canvas" frameborder="0" scrolling="no"
+								style="width: 600px; height: 400px;"></iframe>
+							<style>
+								.mapouter {
+									position: relative;
+									text-align: right;
+									height: 400px;
+									width: 600px;
+								}
+							</style>
+							<style>
+								.gmap_canvas {
+									overflow: hidden;
+									background: none !important;
+									height: 400px;
+									width: 600px;
+								}
+							</style><a href="https://www.eireportingonline.com">ei reporting</a>
+						</div>
+					</div>
+
+				</div>
+				<div class="box img wow slideInRight" id="listadecalistrainers">
+
+					<h1>Nossos Treinadores</h1>
+					<a href="www.google.com">
+						<p>Professor Fulano - Teresina</p>
+					</a>
+					<a href="www.google.com">
+						<p>Professor Fulano - Parnaiba</p>
+					</a>
+					<a href="www.google.com">
+						<p>Professor Fulano - Rio de Janeiro</p>
+					</a>
+					<a href="www.google.com">
+						<p>Professor Fulano - Manaus</p>
+					</a>
+					<a href="www.google.com">
+						<p>Professor Fulano - Foz do Iguaçu</p>
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- End Start Today -->
+
+	<!-- Start Service2 -->
+	<section class="service" id="service">
+		<div class="container">
+			<div class="content">
+				<div><iframe width="320" height="560" src="https://www.youtube.com/embed/xG73QMvozVE"
+						title="Conheça no Head Coach - Igor do Rêgo Monteiro" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen></iframe>
+				</div>
+				<div class="accordian box wow slideInRight">
+					<div class="accordian-container active">
+						<div class="head">
+							<h4>Tendências fitness</h4>
+							<span class="fa fa-angle-down"></span>
+						</div>
+						<div class="body">
+							<p>Há vários anos, o American College of Sport Medicine vem apontando o
+								treinamento com
+								peso corporal como uma das 5 tendências fitness mundiais. A calistenia é já
+								realidade em diversos locais, sendo eleita a tendência #1 na Europa, no ano de 2023.
+							</p>
+						</div>
+					</div>
+					<div class="accordian-container">
+						<div class="head">
+							<h4>Pioneirismo</h4>
+							<span class="fa fa-angle-up"></span>
+						</div>
+						<div class="body">
+							<p>A área da Calistenia ainda é pouco explorada pelos profissionais de educação física no
+								Brasil. Devido à escassez de informações durante a graduação assim como a falta de
+								conteúdo extracurricular, os profissionais não têm uma formação específica para atuar
+								nessa área. Por isso, decidimos compartilhar nosso conhecimento e experiência criando a
+								certificação Calistrainer. Faça parte de um grupo seleto e pioneiro de profissionais
+								capacitados nas primeiras turmas Calistrainer. Saia na frente!</p>
+						</div>
+					</div>
+					<div class="accordian-container">
+						<div class="head">
+							<h4>Treino de Força</h4>
+							<span class="fa fa-angle-up"></span>
+						</div>
+						<div class="body">
+							<p>Leigos acreditam que treinar com peso corporal é muito leve e limitado, que o único
+								resultado é o emagrecimento e que sua variação é através do aumento as repetições.
+								Provavelmente, essas pessoas não tiveram experiência nenhuma com calistenia ou street
+								workout. Nós, como treinadores de calistenia, sabemos que as cargas podem ser
+								manipuladas de várias formas, mesmo nosso peso corporal continuando o mesmo. Existem
+								diversos fatores a serem considerados e ajustados como: vetores de força, ângulo
+								articular, distribuição de massa, braço de alavanca, torque, dentre outros; sem falar
+								das próprias variáveis de treino que influenciam diretamente na intensidade do
+								exercício. Baseado nessas estratégias, os exercícios podem ir de muito leve até muito
+								pesados, muitos deles até acima da carga máxima (1RM). Desta forma, as cargas de treino
+								podem ser manipuladas desde exercícios de resistência aeróbica, anaeróbio, resistência
+								muscular localizada, hipertrofia, força submáxima e força máxima.</p>
+						</div>
+					</div>
+					<div class="accordian-container">
+						<div class="head">
+							<h4>Versatilidade e Liberdade</h4>
+							<span class="fa fa-angle-up"></span>
+						</div>
+						<div class="body">
+							<p>A Calistenia é uma metodologia que utiliza pouco ou nenhum equipamento para realização
+								dos treinos. Isso facilita a realização dos treinos nos mais diferentes lugares, seja
+								num quarto pequeno ou num parque ao ar livre. Esse modelo de atividade possibilita mais
+								versatilidade e liberdade de atuação profissional, possibilitando levar seus serviços a
+								todos, sejam aulas presenciais ou online.</p>
+						</div>
+					</div>
+					<div class="accordian-container">
+						<div class="head">
+							<h4>Eficiência Metabólica</h4>
+							<span class="fa fa-angle-up"></span>
+						</div>
+						<div class="body">
+							<p>O treinamento com peso corporal tem como principal característica utilizar poucos ou
+								nenhum equipamento, consequentemente, é necessário utilizar mais músculos do corpo e
+								consciência corporal para executar os exercícios. Se em um exercício nós somos obrigados
+								a utilizar mais músculos, logo ele apresenta uma demanda energética maior, o que leva a
+								consumir mais energia. De cara, podemos perceber que treinos com peso corporal têm um
+								potencial bem maior para o emagrecimento e redução do percentual de gordura do que
+								exercícios isolados em aparelhos de musculação. Isso, a longo prazo, acaba estimulando
+								um metabolismo mais específico e mais eficiente para o controle do peso corporal.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Service2 -->
+
+	<!-- Start Gallery -->
+	<section class="gallery" id="gallery">
+		<h2>Instagram</h2>
+		<div class="content">
+			<div class="box wow slideInLeft">
+				<a href="https://www.instagram.com/p/CwGKgljxBKT/?img_index=1">
+					<img src="images/insta1.jpg" alt="gallery" /></a>
+			</div>
+			<div class="box wow slideInRight">
+				<a href="https://www.instagram.com/p/CusehgWu543/">
+					<img src="images/insta2.png" alt="gallery" /></a>
+			</div>
+			<div class="box wow slideInLeft">
+				<a href="https://www.instagram.com/p/CvaOXHWO7uQ/">
+					<img src="images/insta3.png" alt="gallery" /></a>
+			</div>
+			<div class="box wow slideInRight">
+				<a href="https://www.instagram.com/p/Cvuq68Bu5P8/">
+					<img src="images/insta4.png" alt="gallery" /></a>
+			</div>
+		</div>
+	</section>
+	<!-- End Gallery -->
+
+	<!--Start Flags -->
+	<section class="flags" id="flags">
+		<div id="estadosBr" class="estadosBr">
+			<div class="estadosBrFrase">Conheça nossos Treinadores Certificados</div>
+			<div class="estadosBrLinkMenu">
+				<a href="piaui.html">
+					<img src="images/estados/PI.png" alt="Bandeira do Piauí">
+					<div>Piauí</div>
+				</a>
+
+				<a href="javascript:void(0);" class="emBreve">
+					<img src="images/estados/PE.png" alt="Bandeira de Pernambuco">
+					<div>Pernambuco</div>
+				</a>
+
+				<a href="javascript:void(0);" class="emBreve">
+					<img src="images/estados/SP.png" alt="Bandeira de São Paulo">
+					<div>São Paulo</div>
+				</a>
+
+				<a href="javascript:void(0);" class="emBreve">
+					<img src="images/estados/CE.png" alt="Bandeira do Ceará">
+					<div>Ceará</div>
+				</a>
+
+				<a href="javascript:void(0);" class="emBreve">
+					<img src="images/estados/DF.png" alt="Bandeira do Distrito Federal">
+					<div>Distrito Federal</div>
+				</a>
+
+
+			</div>
+		</div>
+
+	</section>
+	<!--End Flags-->
+
+	<section class="contact" id="contact">
+		<div class="container">
+			<div class="content">
+				<div class="box form wow slideInLeft">
+					<iframe width="320" height="560" src="https://www.youtube.com/embed/fIzhDHC_MhQ"
+						title="Vem ser um Calistrainer!" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen></iframe>
+				</div>
+				<div class="box text wow slideInRight">
+					<h2>Entre em contato</h2>
+
+					<div class="info">
+						<ul>
+							<li><span class="fa fa-map-marker"></span> Unidade Horto: Rua Jaime da Botica, 2533 </li>
+							<li><span class="fa fa-map-marker"></span> Unidade Parque: Avenida Raul Lopes, 2355. Parque
+								Meus Filhos </li>
+							<li>
+								<a href="https://wa.me/5586995936387">
+									<span class="fa fa-phone"></span> +55 86 99593-6387
+								</a>
+							</li>
+							<li><span class="fa fa-envelope"></span>contato@calistrainer.com.br</li>
+						</ul>
+					</div>
+					<div class="social">
+						<a href="https://www.facebook.com/profile.php?id=100095472666684"><span
+								class="fa fa-facebook"></span></a>
+						<a href="https://www.instagram.com/calistrainer_oficial">
+							<span class="fa fa-instagram"></span>
+						</a>
+
+						<a href="https://youtube.com/@calistrainer_oficial?si=N_TJqnx5IOehawNi"><span
+								class="fa fa-youtube-play"></span></a>
+					</div>
+
+					<div class="copy">
+						&copy; 2023 Calistrainer • Certificação Profissional em Calistenia CNPJ 21.663.532/0001-89
+						Coordenação - Igor do Rêgo Monteiro - CREF 001394-G/PI
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Contact -->
+
+	<!-- jquery -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+
+			$(".ham-burger, .nav ul li a").click(function () {
+
+				$(".nav").toggleClass("open")
+
+				$(".ham-burger").toggleClass("active");
+			})
+			$(".accordian-container").click(function () {
+				$(".accordian-container").children(".body").slideUp();
+				$(".accordian-container").removeClass("active")
+				$(".accordian-container").children(".head").children("span").removeClass("fa-angle-down").addClass("fa-angle-up")
+				$(this).children(".body").slideDown();
+				$(this).addClass("active")
+				$(this).children(".head").children("span").removeClass("fa-angle-up").addClass("fa-angle-down")
+			})
+
+			$(".nav ul li a, .go-down").click(function (event) {
+				if (this.hash !== "") {
+
+					event.preventDefault();
+
+					var hash = this.hash;
+
+					$('html,body').animate({
+						scrollTop: $(hash).offset().top
+					}, 800, function () {
+						window.location.hash = hash;
+					});
+
+					// add active class in navigation
+					$(".nav ul li a").removeClass("active")
+					$(this).addClass("active")
+				}
+			})
+		})
+
+	</script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		wow = new WOW(
+			{
+				animateClass: 'animated',
+				offset: 0,
+			}
+		);
+		wow.init();
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>CALISTRAINERS Piaui</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+		.wow:first-child {
+			visibility: hidden;
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+
+	<!--whatsapp botão-->
+	<script>
+		$(document).ready(function () {
+			var link = "https://api.whatsapp.com/send?phone=5586995936387";
+			var button = `
+   <div class="wa-container">
+	   <div class="wa-button">
+		   <a class="wa-button-link" href="${link}" target="_blank">
+			   <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" width="50" height="50" version="1.1">
+				   <path d=" M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z"></path>
+			   </svg>
+		   </a>
+	   </div>
+   </div>
+		   `;
+			var style = `
+		   <style>
+		   .wa-container {
+			   position: fixed;
+			   bottom: 0;
+			   right: 0;
+			   z-index: 1000;
+			   margin: 0 10px 10px 0;
+		   }
+		   .wa-button {
+			   border-radius: 30px;
+			   background-color: #25d366;
+			   color: #fff;
+			   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			   padding: 5px;
+		   }
+		   .wa-button:hover {
+			   background-color: #075e54;
+		   }
+		   .wa-button svg {
+			   fill: white;
+		   }
+		   </style>`
+			$("body").append(style);
+			$("body").append(button);
+		});
+	</script>
+	<!--fim do botão de whatsapp-->
+
+	<!-- Start Header  -->
+	<header>
+		<div class="container">
+			<div class="logo">
+				<a href="index.html">
+					<img src="images/logo1r.png" alt="CALISTRAINER" id="logotipo">
+				</a>
+			</div>
+
+			<a href="javascript:void(0)" class="ham-burger">
+				<span></span>
+				<span></span>
+			</a>
+			<div class="nav">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="#flags">Treinadores</a></li>
+					<li><a href="https://www.facebook.com/profile.php?id=100095472666684"><span
+								class="fab fa-facebook"></span> Facebook</a></li>
+					<li><a href="https://www.instagram.com/calistrainer_oficial"><span class="fab fa-instagram"></span>
+							Instagram</a></li>
+					<li><a href="https://youtube.com/@calistrainer_oficial?si=N_TJqnx5IOehawNi"><span
+								class="fab fa-youtube-play"></span> Youtube</a></li>
+					<li><a href="#contact">Contato</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- End Header  -->
+
+	<!-- Start Home -->
+	<section class="perfis">
+		<div class="perfil">
+			<img src="images/piaui/AlvaroJunior.jpg" alt="Nome da Pessoa 1">
+			<div class="descricao">
+				<h2><a href="https://instagram.com/yujin.sw?igshid=MzRlODBiNWFlZA==" target="_blank">Álvaro Júnior</a>
+				</h2>
+				<p>CREF 004499-G/PI Profissional de Educação Física
+					Com pós graduação em Exercícios Físicos nos Distúrbios da Coluna Vertebral. Além da experiência em
+					musculação, atua como treinador de Calistenia há mais de 5 anos e é certificado em ginástica pela
+					CWB. É expert em Calistenia voltado para hipertrofia e ganho de força, como também recuperação da
+					saúde e bem-estar relacionado a problemas da coluna vertebral.</p>
+				<div class="botoes">
+					<a href="http://wa.me/5586999649616" target="_blank" class="whatsapp"><i
+							class="fab fa-whatsapp"></i>
+						WhatsApp</a>
+					<a href="https://instagram.com/yujin.sw?igshid=MzRlODBiNWFlZA==" target="_blank"
+						class="instagram"><i class="fab fa-instagram"></i>
+						Instagram</a>
+				</div>
+			</div>
+		</div>
+		<div class="perfil">
+			<img src="images/piaui/FelipeAugustoVieira.jpg" alt="Nome da Pessoa 1">
+			<div class="descricao">
+				<h2><a href="javascript:void(0);" target="_blank">Felipe Augusto Vieira</a></h2>
+				<p>CREF 005599-G/PI
+					Expert em treinamento de força, hipertrofia e desenvolvimento dentro do streetworkout. Atende
+					públicos de todas as faixas etárias de forma presencial, semipresencial e a distância (on-line).</p>
+				<div class="botoes">
+					<a href="javascript:void(0);" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i>
+						WhatsApp</a>
+					<a href="javascript:void(0);" target="_blank" class="instagram"><i class="fab fa-instagram"></i>
+						Instagram</a>
+				</div>
+			</div>
+		</div>
+		<div class="perfil">
+			<img src="images/piaui/IagoLuisTorres.jpg" alt="Nome da Pessoa 1">
+			<div class="descricao">
+				<h2><a href="https://instagram.com/iagoluiz.personal?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">Iago Luis
+						Torres </a></h2>
+				<p>CREF 005286-G/PI Personal trainer de calistenia
+					Atende em casa, na Bravus Training Club e academias de musculação.
+					Expert em prescrição de treino em casos especiais de saúde e lesão além de experiência em
+					Treinamento infantil (Calistenia Recreativa. Especialista em Handstand.</p>
+				<div class="botoes">
+					<a href="https://api.whatsapp.com/send?phone=5586994382855" target="_blank" class="whatsapp"><i
+							class="fab fa-whatsapp"></i>
+						WhatsApp</a>
+					<a href="https://instagram.com/iagoluiz.personal?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"
+						class="instagram"><i class="fab fa-instagram"></i>
+						Instagram</a>
+				</div>
+			</div>
+		</div>
+		<div class="perfil">
+			<img src="images/piaui/IgorDoRegoMonteiro.jpg" alt="Nome da Pessoa 1">
+			<div class="descricao">
+				<h2><a href="https://api.whatsapp.com/send?phone=558699219446" target="_blank">Igor do Rêgo Monteiro</a>
+				</h2>
+				<p>CREF 001394-G/PI
+					Especialista em Atividade Física e Farmacologia.
+					Mestre e doutor em Fisiologia!
+					CEO Bravus Training Club e Calistrainer.
+					Consultor genético.
+				</p>
+				<div class="botoes">
+					<a href="https://api.whatsapp.com/send?phone=558699219446" target="_blank" class="whatsapp"><i
+							class="fab fa-whatsapp"></i>
+						WhatsApp</a>
+					<a href="javascript:void(0);" target="_blank" class="instagram"><i class="fab fa-instagram"></i>
+						Instagram</a>
+				</div>
+			</div>
+		</div>
+		<div class="perfil">
+			<img src="images/piaui/JoaoArthurGoncalves.jpg" alt="Nome da Pessoa 1">
+			<div class="descricao">
+				<h2><a href="https://instagram.com/joaordgn?igshid=MzRlODBiNWFlZA==" target="_blank">João Arthur
+						Gonçalves</a></h2>
+				<p>Expert em treinamento de força, hipertrofia e desenvolvimento dentro do streetworkout. Atende
+					públicos de todas as faixas etárias de forma presencial, semipresencial e a distância (on-line).</p>
+				<div class="botoes">
+					<a href="https://wa.me/5586981817590" target="_blank" class="whatsapp"><i
+							class="fab fa-whatsapp"></i>
+						WhatsApp</a>
+					<a href="https://instagram.com/joaordgn?igshid=MzRlODBiNWFlZA==" target="_blank"
+						class="instagram"><i class="fab fa-instagram"></i>
+						Instagram</a>
+				</div>
+			</div>
+		</div>
+		<div class="perfil">
+			<img src="images/piaui/LarissonHenriqueDeCarvalho.jpg" alt="Nome da Pessoa 1">
+			<div class="descricao">
+				<h2><a href="https://instagram.com/larisonhenrique?igshid=MzRlODBiNWFlZA==" target="_blank">Lárison
+						Henrique de Carvalho</a></h2>
+				<p></p>
+				<div class="botoes">
+					<a href="https://wa.me/+5586988871823" target="_blank" class="whatsapp"><i
+							class="fab fa-whatsapp"></i>
+						WhatsApp</a>
+					<a href="https://instagram.com/larisonhenrique?igshid=MzRlODBiNWFlZA==" target="_blank"
+						class="instagram"><i class="fab fa-instagram"></i>
+						Instagram</a>
+				</div>
+			</div>
+		</div>
+		<div class="perfil">
+			<img src="images/piaui/MariaClaraRocha.jpg" alt="Nome da Pessoa 1">
+			<div class="descricao">
+				<h2><a href="https://instagram.com/_claramente_eu?igshid=MzRlODBiNWFlZA==" target="_blank">Maria Clara
+						Rocha</a></h2>
+				<p>Cursando Educação Física Bacharelado e atuando como estagiária na Bravus Training Club. Pratica
+					Calistenia há mais de 5 anos. Especialista em Street Workout acrobático, treinos físicos de
+					Resistência e perda de gordura corporal.</p>
+				<div class="botoes">
+					<a href="https://wa.me/qr/FUR2VTQ6UKY7D1" target="_blank" class="whatsapp"><i
+							class="fab fa-whatsapp"></i>
+						WhatsApp</a>
+					<a href="https://instagram.com/_claramente_eu?igshid=MzRlODBiNWFlZA==" target="_blank"
+						class="instagram"><i class="fab fa-instagram"></i>
+						Instagram</a>
+				</div>
+			</div>
+		</div>
+		<div class="perfil">
+			<img src="images/piaui/RuanWesleySantos.jpg" alt="Nome da Pessoa 1">
+			<div class="descricao">
+				<h2><a href="https://instagram.com/ruan.wesley_sw?igshid=MzRlODBiNWFlZA==" target="_blank">Ruan Wesley
+						Santos</a></h2>
+				<p></p>
+				<div class="botoes">
+					<a href="https://wa.me/+5586988844180" target="_blank" class="whatsapp"><i
+							class="fab fa-whatsapp"></i>
+						WhatsApp</a>
+					<a href="https://instagram.com/ruan.wesley_sw?igshid=MzRlODBiNWFlZA==" target="_blank"
+						class="instagram"><i class="fab fa-instagram"></i>
+						Instagram</a>
+				</div>
+			</div>
+		</div>
+		<div class="perfil">
+			<img src="images/piaui/SamuelGoncalves.jpg" alt="Nome da Pessoa 1">
+			<div class="descricao">
+				<h2><a href="https://www.instagram.com/invites/contact/?i=1x9x91e1sxqxq&utm_content=2iqe5pk"
+						target="_blank">Samuel Gonçalves</a></h2>
+				<p>Atendimento em turma, local de atuação na Bravus Training Club, treinos de estáticos, balance e
+					físicos.</p>
+				<div class="botoes">
+					<a href="https://wa.link/m3bu7x" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i>
+						WhatsApp</a>
+					<a href="https://www.instagram.com/invites/contact/?i=1x9x91e1sxqxq&utm_content=2iqe5pk"
+						target="_blank" class="instagram"><i class="fab fa-instagram"></i>
+						Instagram</a>
+				</div>
+			</div>
+		</div>
+		<!-- Repita o bloco acima para cada pessoa -->
+	</section>
+
+	<!--Start Flags -->
+	<section class="flags" id="flags">
+		<div id="estadosBr" class="estadosBr">
+			<div class="estadosBrFrase">Conheça Treinadores Certificados</div>
+			<div class="estadosBrLinkMenu">
+				<a href="piaui.html">
+					<img src="images/estados/PI.png" alt="Bandeira do Piauí">
+					<div>Piauí</div>
+				</a>
+
+				<a href="javascript:void(0);" class="emBreve">
+					<img src="images/estados/PE.png" alt="Bandeira de Pernambuco">
+					<div>Pernambuco</div>
+				</a>
+
+				<a href="javascript:void(0);" class="emBreve">
+					<img src="images/estados/SP.png" alt="Bandeira de São Paulo">
+					<div>São Paulo</div>
+				</a>
+
+				<a href="javascript:void(0);" class="emBreve">
+					<img src="images/estados/CE.png" alt="Bandeira do Ceará">
+					<div>Ceará</div>
+				</a>
+
+				<a href="javascript:void(0);" class="emBreve">
+					<img src="images/estados/DF.png" alt="Bandeira do Distrito Federal">
+					<div>Distrito Federal</div>
+				</a>
+
+
+			</div>
+		</div>
+
+	</section>
+	<!--End Flags-->
+
+	<section class="contact" id="contact">
+		<div class="container">
+			<div class="content">
+				<div class="box form wow slideInLeft">
+					<iframe width="320" height="560" src="https://www.youtube.com/embed/fIzhDHC_MhQ"
+						title="Vem ser um Calistrainer!" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen></iframe>
+				</div>
+				<div class="box text wow slideInRight">
+					<h2>Entre em contato</h2>
+
+					<div class="info">
+						<ul>
+							<li><span class="fa fa-map-marker"></span> Unidade Horto: Rua Jaime da Botica, 2533 </li>
+							<li><span class="fa fa-map-marker"></span> Unidade Parque: Avenida Raul Lopes, 2355. Parque
+								Meus Filhos </li>
+							<li>
+								<a href="https://wa.me/5586995936387">
+									<span class="fa fa-phone"></span> +55 86 99593-6387
+								</a>
+							</li>
+							<li><span class="fa fa-envelope"></span>contato@calistrainer.com.br</li>
+						</ul>
+					</div>
+					<div class="social">
+						<a href="https://www.facebook.com/profile.php?id=100095472666684"><span
+								class="fab fa-facebook"></span></a>
+						<a href="https://www.instagram.com/calistrainer_oficial">
+							<span class="fab fa-instagram"></span>
+						</a>
+
+						<a href="https://youtube.com/@calistrainer_oficial?si=N_TJqnx5IOehawNi"><span
+								class="fab fa-youtube-play"></span></a>
+					</div>
+
+					<div class="copy">
+						&copy; 2023 Calistrainer • Certificação Profissional em Calistenia CNPJ 21.663.532/0001-89
+						Coordenação - Igor do Rêgo Monteiro - CREF 001394-G/PI
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Contact -->
+
+
+
+	<!-- jquery -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+
+			$(".ham-burger, .nav ul li a").click(function () {
+
+				$(".nav").toggleClass("open")
+
+				$(".ham-burger").toggleClass("active");
+			})
+			$(".accordian-container").click(function () {
+				$(".accordian-container").children(".body").slideUp();
+				$(".accordian-container").removeClass("active")
+				$(".accordian-container").children(".head").children("span").removeClass("fa-angle-down").addClass("fa-angle-up")
+				$(this).children(".body").slideDown();
+				$(this).addClass("active")
+				$(this).children(".head").children("span").removeClass("fa-angle-up").addClass("fa-angle-down")
+			})
+
+			$(".nav ul li a, .go-down").click(function (event) {
+				if (this.hash !== "") {
+
+					event.preventDefault();
+
+					var hash = this.hash;
+
+					$('html,body').animate({
+						scrollTop: $(hash).offset().top
+					}, 800, function () {
+						window.location.hash = hash;
+					});
+
+					// add active class in navigation
+					$(".nav ul li a").removeClass("active")
+					$(this).addClass("active")
+				}
+			})
+		})
+
+	</script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		wow = new WOW(
+			{
+				animateClass: 'animated',
+				offset: 0,
+			}
+		);
+		wow.init();
+	</script>
+
+	<!-- End Home -->
+</body>
+
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>BRAVUS CALISTRAINER</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/c/style.css">
+    <style>
+        .wow:first-child {
+            visibility: hidden;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <!--Scripts de botão whatsapp, menu hamburguer e animações wow do projeto BRAVUS-->
+    <script>
+        $(document).ready(function () {
+            var link = "https://api.whatsapp.com/send?phone=5586995936387";
+            var button = `
+   <div class="wa-container">
+	   <div class="wa-button">
+		   <a class="wa-button-link" href="${link}" target="_blank">
+			   <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" width="50" height="50" version="1.1">
+				   <path d=" M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z"></path>
+			   </svg>
+		   </a>
+	   </div>
+   </div>
+		   `;
+            var style = `
+		   <style>
+		   .wa-container {
+			   position: fixed;
+			   bottom: 0;
+			   right: 0;
+			   z-index: 1000;
+			   margin: 0 10px 10px 0;
+		   }
+		   .wa-button {
+			   border-radius: 30px;
+			   background-color: #25d366;
+			   color: #fff;
+			   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			   padding: 5px;
+		   }
+		   .wa-button:hover {
+			   background-color: #075e54;
+		   }
+		   .wa-button svg {
+			   fill: white;
+		   }
+		   </style>`
+            $("body").append(style);
+            $("body").append(button);
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $(".ham-burger, .nav ul li a").click(function () {
+
+                $(".nav").toggleClass("open")
+
+                $(".ham-burger").toggleClass("active");
+            })
+            $(".accordian-container").click(function () {
+                $(".accordian-container").children(".body").slideUp();
+                $(".accordian-container").removeClass("active")
+                $(".accordian-container").children(".head").children("span").removeClass("fa-angle-down").addClass("fa-angle-up")
+                $(this).children(".body").slideDown();
+                $(this).addClass("active")
+                $(this).children(".head").children("span").removeClass("fa-angle-up").addClass("fa-angle-down")
+            })
+
+            $(".nav ul li a, .go-down").click(function (event) {
+                if (this.hash !== "") {
+
+                    event.preventDefault();
+
+                    var hash = this.hash;
+
+                    $('html,body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+
+                    // add active class in navigation
+                    $(".nav ul li a").removeClass("active")
+                    $(this).addClass("active")
+                }
+            })
+        })
+
+    </script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        wow = new WOW(
+            {
+                animateClass: 'animated',
+                offset: 0,
+            }
+        );
+        wow.init();
+    </script>
+    <!--Fim dos Scripts do projeto BRAVUS-->
+
+    <!-- Start Header  -->
+    <section>
+        <div class="topo">
+            <div class="logo">
+                <img src="images/logo1r.png" alt="CALISTRAINER" id="ologo">
+            </div>
+        </div>
+    </section>
+    <!-- End Header  -->
+
+    <div class="videoYtContainer">
+        <iframe class="videoYt" src="https://www.youtube.com/embed/kpnW68Q8ltc"
+            title="Doom Eternal OST - The Only Thing They Fear Is You (Mick Gordon) [Doom Eternal Theme]"
+            allowfullscreen></iframe>
+    </div>
+
+    <div class="botaoContainer">
+        <a href="https://wa.me/seu_numero_de_telefone" class="inscriçãoJa">WhatsApp</a>
+    </div>
+
+    <section class="caixaTexto">
+        <h1 class="tituloC">A Primeira Certificação de Calistenia do Brasil</h1>
+        <p class="textoInfo">Idealizada desde 2020, a primeira certificação para formação de treinadores de Calistenia
+            do Brasil,
+            passou
+            três anos sendo estruturada e revisada para ter sua primeira turma intinerante lançada em setembro de
+            2023!
+            A certificação Calistrainer foi formulada para atender às necessidades e às demandas da legislação e
+            mercado
+            brasileiro. Voltada para estudantes e profissionais de Educação Física, nosso curso tem como objetivo
+            entregar de forma prática as bases para uma atuação assertiva e segura para treinadores de Calistenia e
+            Street Workout! Tudo isso baseado em teoria, ciência e experiência de uma equipe de diversos
+            profissionais da área.</p>
+        </div>
+
+        <div class="linhaC"></div>
+
+
+        <h1 class="tituloC">Responsável Técnico pelo Curso</h1>
+
+        <div class="container">
+            <div class="content">
+                <div class="caixaFoto">
+                    <img src="images/IgorP.png" alt="IgorP" />
+                </div>
+                <div class="TextoC">
+                    <p>Nosso Coordenador e Headcoach, Igor do Rêgo Monteiro, é Profissional de
+                        Educação Física,
+                        especialista em Atividade Física e Farmacologia, Mestre e Doutor em Fisiologia. Atua como
+                        consultor genético, HeadCoach e treinador de Calistenia da Bravus Training Club, onde coordena
+                        uma equipe de 10 treinadores. Tem como base esportiva, a prática e ensino de artes marciais, e
+                        como base acadêmica a ciência e pesquisa de biologia molecular e fisiologia! Tem como lema
+                        analisar a prática de forma científica e a ciência de forma prática, de maneira que se possa
+                        alcançar resultados cada vez mais reais, significativos e consistentes! Em sua opinião: o
+                        sucesso é medido com o quanto se impacta a sociedade de forma positiva! Seu grande sonho é poder
+                        construir um legado de sucesso pessoal e profissional, não somente para si e a Calistrainer faz
+                        parte desse processo!</p>
+                </div>
+                <div class="caixaFoto mobile-hidden ">
+                    <img src="images/IgorP.png" alt="IgorP" />
+                </div>
+                <div class="caixaFoto mobile-hidden ">
+                    <img src="images/IgorP.png" alt="IgorP" />
+                </div>
+            </div>
+        </div>
+
+        <div class="linhaC"></div>
+
+
+
+
+        <section class="caixaTexto">
+            <h1 class="tituloC">O Método</h1>
+            <p class="textoInfo">Nosso método foi desenvolvido durante 6 anos dentro da Bravus Training Club, um dos
+                maiores e principais
+                centros de treinamento de Calistenia do Brasil! Durante esse período, foram treinados quase 1 mil alunos
+                com as mais diferentes bases e objetivos. Com a participação de 10 treinadores atuando em conjunto e se
+                reunindo semanalmente para discutir casos, progressos, lesões e diferentes situações, aos poucos foi
+                sendo testado e comparado diferentes métodos e formas de ensino da Calistenia. Com muitos erros e
+                acertos, muitos estudos de casos e muitas conclusões, chegamos à uma metodologia cada vez mais segura e
+                eficiente para a estruturação, evolução e prevenção de lesões para treinos de Calistenia; seja em grupo
+                ou individual, seja para iniciantes ou avançados, seja para a saúde, estética ou alta performance! Nosso
+                método está organizado para que os treinadores sigam e tenham resultados otimizados de seus alunos em
+                todos os aspectos almejados. Nosso método se baseia em avaliação inicial, classificação dos alunos,
+                indicação de treinos, acompanhamento personalizado, objetivos claros, fidelização dos alunos e sucesso
+                profissional com o objetivo de crescimento e ganhos financeiros concretos.</p>
+
+            <div class="linhaC"></div>
+
+            <h1 class="tituloC">Pra Quem é Esse Curso?</h1>
+            <p class="textoInfo">Nosso curso é voltado para pessoas que queiram transformar vidas através do movimento!
+                A Calistenia e o
+                Street Workout são umas das formas mais eficientes e belas de se promover o movimento humano baseado em
+                uma metodologia consistente, segura e motivadora. Se você é estudante ou profissional de Educação Física
+                e quer atuar em uma área promissora, te daremos toda uma base para construção e crescimento profissional
+                dentro do treinamento com peso corporal! Se você é praticante ou atleta de Calistenia e Street Workout,
+                te incentivamos a se tornar um estudante de Educação Física e fazer nosso curso para também se tornar um
+                treinador de Calistenia. Nossa missão é dar os subsídios necessário para você se tornar um bom
+                treinador. Nosso principal objetivo não é te ensinar a treinar e sim te ensinar a treinar os outros:
+                isso tem uma grande diferença.</p>
+
+            <div class="linhaC"></div>
+
+            <h1 class="tituloC">Divulgação dos Treinadores</h1>
+            <p class="textoInfo">Além de fornecer o conhecimento necessário para atuar como treinador, temos como grande
+                objetivo o
+                crescimento profissional de nossa equipe! Ao fazer nossa certificação, você fará parte de nossa equipe
+                de treinadores de Calistenia, CALISTRAINERs, e será divulgado para que possa ser encontrado por quem
+                busca treinar. Nosso site conta com uma aba para divulgação dos treinadores certificados em cada estado!
+                Além disso, buscamos sempre divulgar a atuação de nossos treinadores por nossas redes sociais.</p>
+
+            <div class="linhaC"></div>
+
+            <h1 class="tituloC">Plano de Carreira</h1>
+            <p class="textoInfo">-Camisa Calistrainer
+                -Munhequeira de Treinador
+                -Divulgação em nosso site
+                -acesso ao grupo nacional de CALISTRAINERs
+                -Assessoria para planejamento de carreira</p>
+            <div class="linhaC"></div>
+        </section>
+
+        <h1 p class="tituloC">Bônus : *inserir conteudo bonus em forma de lista* </h1>
+
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="video-slide">
+                    <iframe width="1310" height="489" src="https://www.youtube.com/embed/CXRxRTW6nXg"
+                        title="The Only Thing I Know For Real" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-slide">
+                    <iframe width="1310" height="489" src="https://www.youtube.com/embed/jynTNYSKNuk"
+                        title="Metal Gear Rising: Revengeance OST - Red Sun Extended" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <!-- Adicione mais vídeos conforme necessário -->
+            </div>
+            <button id="prevBtn">Anterior</button>
+            <button id="nextBtn">Próximo</button>
+            <div id="counter"></div>
+        </div>
+
+
+
+    </section>
+
+    <section class="contact mobile-hidden" id="contact">
+        <div class="container">
+            <div class="content">
+                <div class="box form wow slideInLeft">
+                    <div class="ultimoShort">
+                        <iframe width="320" height="560" src="https://www.youtube.com/embed/fIzhDHC_MhQ"
+                            title="Vem ser um Calistrainer!" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="box text wow slideInRight">
+                    <h2>Entre em Contato</h2>
+
+                    <div class="info">
+                        <ul>
+                            <li><span class="fa fa-map-marker"></span> Unidade Horto: Rua Jaime da Botica, 2533 </li>
+                            <li><span class="fa fa-map-marker"></span> Unidade Parque: Avenida Raul Lopes, 2355. Parque
+                                Meus Filhos </li>
+                            <li>
+                                <a href="https://wa.me/5586995936387">
+                                    <span class="fa fa-phone"></span> +55 86 99593-6387
+                                </a>
+                            </li>
+                            <li><span class="fa fa-envelope"></span>contato@calistrainer.com.br</li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.facebook.com/profile.php?id=100095472666684"><span
+                                class="fa fa-facebook"></span></a>
+                        <a href="https://www.instagram.com/calistrainer_oficial">
+                            <span class="fa fa-instagram"></span>
+                        </a>
+
+                        <a href="https://youtube.com/@calistrainer_oficial?si=N_TJqnx5IOehawNi"><span
+                                class="fa fa-youtube-play"></span></a>
+                    </div>
+
+                    <div class="copy">
+                        &copy; 2023 Calistrainer • Certificação Profissional em Calistenia CNPJ 21.663.532/0001-89
+                        Coordenação - Igor do Rêgo Monteiro - CREF 001394-G/PI
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--VERSÃO MOBILE EXCLUSIVA-->
+    <section class="contact mobile-only">
+        <div class="infoC">
+            <h2>Entre em Contato</h2>
+            <ul>
+                <li><span class="fa fa-map-marker"></span> Unidade Horto: Rua Jaime da Botica, 2533 </li>
+                <li><span class="fa fa-map-marker"></span> Unidade Parque: Avenida Raul Lopes, 2355. Parque
+                    Meus Filhos </li>
+                <li>
+                    <a href="https://wa.me/5586995936387">
+                        <span class="fa fa-phone"></span> +55 86 99593-6387
+                    </a>
+                </li>
+                <li><span class="fa fa-envelope"></span>contato@calistrainer.com.br</li>
+            </ul>
+        </div>
+        <div class="socialC">
+            <a href="https://www.facebook.com/profile.php?id=100095472666684"><span class="fa fa-facebook"></span></a>
+            <a href="https://www.instagram.com/calistrainer_oficial">
+                <span class="fa fa-instagram"></span>
+            </a>
+
+            <a href="https://youtube.com/@calistrainer_oficial?si=N_TJqnx5IOehawNi"><span
+                    class="fa fa-youtube-play"></span></a>
+        </div>
+
+        <div class="copyC">
+            &copy; 2023 Calistrainer • Certificação Profissional em Calistenia CNPJ 21.663.532/0001-89
+            Coordenação - Igor do Rêgo Monteiro - CREF 001394-G/PI
+        </div>
+    </section>
+
+    <script>
+        const carousel = document.querySelector('.carousel');
+        const videoSlides = document.querySelectorAll('.video-slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        let currentIndex = 0;
+
+        function updateCounter() {
+            counter.innerText = `${currentIndex + 1} de ${videoSlides.length}`;
+        }
+
+        function showSlide(index) {
+            const offset = index * videoSlides[0].offsetWidth;
+            carousel.style.transform = `translateX(-${offset}px)`;
+        }
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + videoSlides.length) % videoSlides.length;
+            showSlide(currentIndex);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % videoSlides.length;
+            showSlide(currentIndex);
+        });
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,785 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url('../../images/Background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*PAGINA APRESENTAÇÃO*/
+
+/* Estilo para o topo do cabeçalho */
+.topo {
+    background-color: #222222;
+    /* Cor de fundo para a parte do topo */
+    padding: 20px 0;
+    /* Espaçamento interno no topo */
+    text-align: center;
+    /* Alinhar o conteúdo ao centro */
+}
+
+/* Estilo para o logo */
+.logo {
+    display: inline-block;
+    /* Faz com que o bloco da logo se comporte como um elemento em linha */
+}
+
+#ologo {
+    width: 215px;
+    /* Tamanho inicial da imagem da logo para desktop */
+    height: auto;
+    /* Altura automática para manter a proporção da imagem */
+}
+
+/* Estilo para o link da logo */
+.logo a {
+    text-decoration: none;
+    /* Remove o sublinhado do link */
+    color: white;
+    /* Cor do texto do link */
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .topo {
+        padding: 15px 0;
+        /* Reduz o espaçamento interno no topo para dispositivos móveis */
+    }
+
+    #ologo {
+        width: 120px;
+        /* Reduz o tamanho da imagem da logo para dispositivos móveis */
+    }
+}
+
+.videoYtContainer {
+    background-color: #8e8e8e;
+    border: 1px solid #424242;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 698px;
+    height: 398px;
+    margin: 75px auto 25px auto;
+    display: block;
+}
+
+.videoYt {
+    width: 100%;
+    height: 100%;
+}
+
+.botaoContainer {
+    background-color: #222222;
+    background-size: cover;
+    /* Garante que a imagem de fundo cubra todo o contêiner */
+    background-repeat: no-repeat;
+    /* Evita a repetição da imagem de fundo */
+    background-position: center;
+    /* Centraliza a imagem de fundo no contêiner */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto;
+}
+
+
+.inscriçãoJa {
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 30px 30px;
+    border-radius: 20px;
+    width: 80%;
+    /* Define a largura do botão como 80% do contêiner de vídeo */
+    max-width: 400px;
+    /* Define a largura máxima do botão para manter o tamanho proporcional */
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    margin: 25px auto;
+    display: center;
+}
+
+.inscriçãoJa:hover {
+    transform: scale(1.1);
+    /* Faz o botão aumentar de tamanho ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+    .whatsapp-button {
+        font-size: 16px;
+        /* Reduz o tamanho da fonte para dispositivos móveis */
+        padding: 12px 24px;
+        /* Reduz o preenchimento do botão para dispositivos móveis */
+    }
+}
+
+.textoInfo {
+    margin: 0 0 26px calc((100% - 980px) * 0.5);
+    /* Centraliza a caixa de texto horizontalmente */
+    max-width: 980px;
+    /* Define a largura máxima da caixa de texto */
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    position: relative;
+    font-size: 17px;
+}
+
+.tituloC {
+    font-size: 35px;
+    text-align: center;
+    margin: 25px auto;
+}
+
+.TextoC {
+    max-width: 250px; /* Largura máxima do texto igual à largura das imagens */
+    overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse os limites da .TextoC */
+    text-overflow: ellipsis; /* Adiciona reticências (...) ao texto que ultrapassa o contêiner */
+}
+
+.imagemPerfil {
+    width: 100%; /* Garante que a imagem preencha a largura da .caixaFoto */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box.img img {
+    width: 100%;
+    /* Ajuste o tamanho da imagem conforme necessário */
+    margin-right: 20px;
+    /* Espaçamento à direita da imagem */
+}
+
+.box.text {
+    max-width: 400px;
+    /* Largura máxima do bloco de texto */
+}
+
+
+.caixaTexto {
+    padding: 20px;
+    background-color: #ddda1d;
+}
+
+.caixaFoto {
+    width: 250px; /* Largura das imagens */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin: 0 auto 20px auto; /* Espaçamento entre as caixasFoto e alinhamento central vertical */
+}
+
+.caixaFoto img {
+    width: 250px; /* Largura desejada para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaçamentos extras abaixo das imagens */
+    margin: 0 auto; /* Centraliza as imagens dentro da .caixaFoto */
+}
+
+.ultimoShort {
+    display: flex;
+    justify-content: center;
+}
+
+.linhaC {
+    margin: 25px auto auto auto;
+    border-bottom: 1px solid black;
+}
+
+.mobile-only {
+    display: none;
+}
+
+/* TESTE dos C's */
+
+/* Contact Section */
+
+.contact {
+    padding: 20px 0px;
+    background-color: #222222;
+}
+
+.contact .box {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 5px;
+}
+
+.contact .form input,
+.contact .form textarea {
+    height: 45px;
+    width: 100%;
+    padding: 6px 12px;
+    margin-bottom: 25px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    font-family: 'Open-sans', sans-serif;
+    color: #ffffff;
+}
+
+.contact h2 {
+    color: #ffffff;
+    padding-bottom: 10px;
+}
+
+.contact .form input:focus,
+.contact .form textarea:focus {
+    outline: none;
+}
+
+.contact .form input::placeholder,
+.contact .form textarea::placeholder {
+    color: #ffffff;
+}
+
+.contact .form textarea {
+    height: 100px;
+}
+
+.contact .form button {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    height: 45px;
+    padding: 0px 50px;
+    border: 1px solid transparent;
+    background-color: #ddda1d;
+    color: #000000;
+    font-size: 15px;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.contact .form button:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.contact .text h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #ddda1d;
+    padding: 0px 0px 20px;
+}
+
+.contact .text p {
+    font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0px 0px 30px;
+    font-family: 'Open-sans', sans-serif;
+}
+
+.contact .infoC ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact .infoC li {
+    display: block;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    position: relative;
+    padding-left: 40px;
+    font-family: 'Open-Sans', sans-serif;
+}
+
+.contact .infoC li span {
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-size: 20px;
+    color: #ddda1d;
+}
+
+.contact .infoC a {
+    color: #ffffff;
+}
+
+.contact .infoC a:hover {
+    color: #ddda1d;
+}
+
+.contact .socialC {
+    padding-top: 30px;
+}
+
+.contact .socialC a {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #ddda1d;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+    transition: all .5s ease;
+    border: 1px solid transparent;
+}
+
+.contact .socialC a:hover {
+    background-color: transparent;
+    border-color: #ffffff;
+}
+
+.contact .socialC a span {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.contact .copyC {
+    border-top: 1px solid #333333;
+    margin-top: 30px;
+    padding-top: 20px;
+    color: #c5c5c5;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos gerais para dispositivos móveis */
+@media (max-width: 768px) {
+    body {
+        background-size: cover;
+    }
+
+    .topo {
+        padding: 15px 0;
+    }
+
+    #ologo {
+        width: 80px;
+    }
+
+    .videoYtContainer {
+        width: 100%;
+        height: 356px;
+        margin: 25px auto;
+    }
+
+    .inscriçãoJa {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .textoInfo {
+        margin: 0 10px 26px 10px;
+        font-size: 14px;
+    }
+
+    .tituloC {
+        font-size: 28px;
+        margin: 15px auto;
+    }
+
+    .box.img img {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .box.text {
+        max-width: 100%;
+    }
+
+    .caixaTexto {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .linhaC {
+        margin: 15px auto;
+    }
+
+    .mobile-hidden {
+        display: none; /* Oculta as imagens com a classe mobile-hidden */
+    }
+
+    .mobile-only {
+        display: block;
+    }
+}
+
+
+/* Estilos para dispositivos com largura máxima de 425px (por exemplo, smartphones em modo retrato) */
+@media (max-width: 425px) {
+    body {
+        background-size: cover;
+    }
+
+    .topo {
+        padding: 15px 0;
+    }
+
+    #ologo {
+        width: 60px;
+    }
+
+    .videoYtContainer {
+        width: 100%;
+        height: 200px;
+        margin: 15px auto;
+    }
+
+    .inscriçãoJa {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .textoInfo {
+        margin: 0 10px 20px 10px;
+        font-size: 12px;
+    }
+
+    .tituloC {
+        font-size: 24px;
+        margin: 10px auto;
+    }
+
+    .box.img img {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .box.text {
+        max-width: 100%;
+    }
+
+    .caixaTexto {
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    .linhaC {
+        margin: 10px auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para animação */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.wow {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.splide__slide img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/*Contact Section*/
+
+.contact {
+    padding: 20px 0px;
+    background-color: #222222;
+}
+
+.contact .content {
+    -webkit-display: flex;
+    display: flex;
+}
+
+.contact .content .box {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 5px;
+}
+
+.contact .content .form input,
+.contact .content .form textarea {
+    height: 45px;
+    width: 100%;
+    padding: 6px 12px;
+    margin-bottom: 25px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    font-family: 'Open-sans', sans-serif;
+    color: #ffffff;
+}
+
+.contact .content .form input:focus,
+.contact .content .form textarea:focus {
+    outline: none;
+}
+
+.contact .content .form input::placeholder,
+.contact .content .form textarea::placeholder {
+    color: #ffffff;
+}
+
+.contact .content .form textarea {
+    height: 100px;
+}
+
+.contact .content .form button {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    height: 45px;
+    padding: 0px 50px;
+    border: 1px solid transparent;
+    background-color: #ddda1d;
+    color: #000000;
+    font-size: 15px;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.contact .content .form button:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.contact .content .text h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #ddda1d;
+    padding: 0px 0px 20px;
+}
+
+.contact .content .text p {
+    font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0px 0px 30px;
+    font-family: 'Open-sans', sans-serif;
+}
+
+.contact .content .text .info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact .content .text .info li {
+    display: block;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    position: relative;
+    padding-left: 40px;
+    font-family: 'Open-Sans', sans-serif;
+}
+
+.contact .content .text .info li span {
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-size: 20px;
+    color: #ddda1d;
+}
+
+.contact .content .text .info a {
+    color: #ffffff;
+}
+
+.contact .content .text .info a:hover {
+    color: #ddda1d;
+}
+
+.contact .content .text .social {
+    padding-top: 30px;
+}
+
+.contact .content .text .social a {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #ddda1d;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+    transition: all .5s ease;
+    border: 1px solid transparent;
+}
+
+.contact .content .text .social a:hover {
+    background-color: transparent;
+    border-color: #ffffff;
+}
+
+.contact .content .text .social a span {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.contact .content .text .copy {
+    border-top: 1px solid #333333;
+    margin-top: 30px;
+    padding-top: 20px;
+    color: #c5c5c5;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Carrousel teste */
+
+.carousel-container {
+    position: relative;
+    height: auto;
+    width: auto;
+    /* Largura de um vídeo do YouTube padrão */
+    margin: 0 auto;
+    background-color: #ff0000;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid rgba(208, 255, 0, 0.747);
+
+
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.video-slide {
+    flex: 0 0 100%;
+    /* Cada slide ocupa 100% da largura do carousel-container */
+}
+
+#prevBtn {
+    left: 0;
+}
+
+#nextBtn {
+    right: 0;
+}
+
+#counter {
+    margin-top: 20px;
+}
